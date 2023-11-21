@@ -5,7 +5,7 @@
 
 ## ✅ 알고리즘 문제 풀이 사이트
 
-- [Baekjoon Online Judge](https://www.acmicpc.net/)
+- [Baekjoon Online Judge]([https://www.acmicpc.net/](https://www.acmicpc.net/))
 - [Programmers](https://programmers.co.kr/)
 
 ## ✅ 파일 및 폴더 구조
