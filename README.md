@@ -20,7 +20,7 @@
 
 ## ✅ 스터디 진행 방법
 
-- main Branch를 Clone / Pull 합니다.
+- main Branch를 fork 합니다.
 - 본인 깃허브 닉네임의 브렌치를 새로 생성합니다.
   - Ex) junhwan 브렌치
 - 본인이 풀이한 문제를 파일 및 폴더 구조에 맞게 생성합니다.
