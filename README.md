@@ -1,4 +1,4 @@
-## ✏ coding_test Study Group
+## ✏ CodingTest_study Group
 
 - 코딩테스트 대비 알고리즘 스터디 그룹
 - 매주 월요일, 목요일 18시 이후에 회의
