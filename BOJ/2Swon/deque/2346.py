@@ -16,5 +16,4 @@ while q:
     elif number < 0:
         q.rotate(-number)
 
-
 print(*ans)

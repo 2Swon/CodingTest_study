@@ -1,34 +1,40 @@
-# n = int(input())
-# card_list = sorted(list(map(int, input().split())))
-# m = int(input())
-# find_list = list(map(int, input().split()))
-#
-# def binaray_search(N, card_list, start, end):
-#     if start > end:
-#         return 0
-#
-#     mid = (start+end)//2
-#
-#     if N == card_list[mid]:
-#         return card_list[start:end+1].count(N)
-#     elif N > card_list[mid]:
-#         return binaray_search(N, card_list, mid+1, end)
-#
-#     elif N < card_list[mid]:
-#         return binaray_search(N, card_list, start, mid-1)
-
 import sys
+
 input = sys.stdin.readline
-n = int(input())
-card_list = list(map(int,input().split()))
-m = int(input())
-find_list = list(map(int,input().split()))
 
-ans = [0 for _ in range(m)]
+_ = input()
+N = sorted(map(int, input().split()))
+_ = input()
+M = map(int, input().split())
 
-for num in card_list:
-    if num in find_list:
-        ans[find_list.index(num)] += 1
+def binary_search(array, target, start, end):
 
-print(*ans)
+    if start > end:
+        return 0
 
+    mid = (start + end) // 2
+
+    if array[mid] == target:
+        return array[start:end+1].count(target)
+
+    elif array[mid] < target:
+        return binary_search(array, target, mid+1, end)
+    else:
+        return binary_search(array, target, start, mid-1)
+
+n_dic = {}
+for n in N:
+    start = 0
+    end = len(N) - 1
+    if n not in n_dic:
+        n_dic[n] = binary_search(N, n, start, end)
+
+result = []
+for x in M:
+    if x in n_dic:
+        result.append(str(n_dic[x]))
+    else:
+        result.append('0')
+
+output = ' '.join(result)
+print(output)
