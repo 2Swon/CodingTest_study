@@ -25,9 +25,9 @@
 # 888888
 # 예제 출력 4
 # 6
-num_array = list(map(int, input()))
+num_list = list(map(int, input()))
 ans_array = [0 for _ in range(10)]
-for word in num_array:
+for word in num_list:
     if word == 6 or word == 9:
         if ans_array[6] <= ans_array[9]:
             ans_array[6] += 1
