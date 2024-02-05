@@ -7,7 +7,7 @@ def solution(babbling):
             if pro * 2 not in word:
                 word=word.replace(pro,' ')
         if word.isspace():
-            answer += 1
+            answer+=1
 
     return answer
 
