@@ -5,12 +5,9 @@ while True:
         break
     word_list.append(list(word))
 
-temp = []
-for i in word_list:
-    temp.append(list(reversed(i)))
 
-for i in range(len(word_list)):
-    if word_list[i] != temp[i]:
+for i in word_list:
+    if i != i[::-1]:
         print('no')
 
     else:
