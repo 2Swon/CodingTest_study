@@ -1,15 +1,3 @@
-# N = int(input())
-# M = int(input())
-# arr = input()
-#
-# check = 'IO' * N + 'I'
-# cnt = 0
-# for i in range(M - len(check)+1):
-#     if check == arr[i:i+len(check)]:
-#         cnt += 1
-#
-# print(cnt)
-
 N = int(input())
 M = int(input())
 arr = input()
