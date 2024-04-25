@@ -16,5 +16,3 @@ if DP[N] == math.inf:
 
 else:
     print(DP[N])
-
-
