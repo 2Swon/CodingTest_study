@@ -1,11 +1,11 @@
 N = int(input())
 
-arr = list(input())
-idx = 0
+M = 1234567891
+r = 31
+arr = input()
 ans = 0
-for i in arr:
-    num = ord(i) - 96
-    ans += num * 31 ** idx
-    idx += 1
+for i in range(N):
+    num = ord(arr[i]) - 96
+    ans += num * r ** i
 
-print(ans)
+print(ans % M)
